@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read: {{ title }}{% endblock %}
+{# comment #}
+{% block body %}
+<h1>{{ title }}</h1>
+<div>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+    <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+    <p>Bacon page Bitchhhh</p>
+
+</div>
+
+<h2>Comments ({{ comments|length }})</h2>
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
